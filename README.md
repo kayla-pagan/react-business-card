@@ -9,4 +9,4 @@ project:
     -Creating custom components for the contents of my page
     -Using className to add styling
 
-Please check out my completed project! https://voluble-panda-7d901c.netlify.app
+Please check out my completed project! https://fantastic-marshmallow-46fd0d.netlify.app

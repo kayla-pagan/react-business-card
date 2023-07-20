@@ -1,0 +1,215 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #23252C;
+    font-size: 16px;
+    font-family: Inter;
+}
+
+div#root {
+    margin:0 auto;
+    flex: 0 0 340px;
+    height: auto;
+}
+
+div.card, .headshot, footer {
+    width: 100%;
+}
+
+div.card {
+    border-radius: 0.625em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.main {
+    background-color: #1A1B21;
+}
+
+.headshot {
+    border-radius: 0.625em 0.625em 0 0;
+}
+
+.info {
+    text-align: center;
+    margin-top: 1.3125em;
+}
+
+.info--name_title > h1,
+.info--name_title > a,
+.info--name_title > p {
+    margin: 0;
+}
+
+.info--name_title > h1 {
+    color: #FFF;
+    font-size: 1.5625rem;
+}
+
+.info--name_title > p {
+    color: #F3BF99;
+    font-size: 0.8rem;
+    padding: 0.47em 0 0.625em 0;
+}
+
+.info--name_title > a {
+    color: #F5F5F5;
+    font-size: 0.64rem;
+    text-decoration: none;
+} 
+
+.info--buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.0625em;
+    margin: 0.9375em 2.0625em;
+}
+
+.info--buttons > a {
+    text-decoration: none;
+    font-size: 0.875rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    width: 115px;
+    height: 2.428em;
+    padding: 9px 13px 9px 11px;
+    border-radius: 0.375em;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+}
+
+.info--buttons img {
+    width: 1.14em;
+    height: 1.14em;
+}
+
+.info--buttons > p {
+    margin: 0;
+    padding: 0;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.14em;
+}
+
+.info--buttons_email {
+    border: 1px solid #D1D5DB;
+    background-color: #D1D5DB;
+    color: #000;
+}
+
+.info--buttons_linkedin {
+    background-color: #5093E2;
+    border: 1px solid #5093E2;
+    color: #FFF;
+}
+
+.about, .interests {
+    width: 78%;
+    margin: 0 auto;
+}
+
+.about > h1, .interests > h1 {
+    color: #F5F5F5;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.about > p, .interests > p {
+    color: #DCDCDC;
+    font-size: 0.64rem;
+    margin: 0;
+    padding-bottom: 2.44em;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    background-color: #161619;
+    border-radius: 0px 0px 10px 10px;
+}
+
+footer > a {
+    padding-block: 1.25em;
+}
+
+/* MEDIA QUERIES */
+
+@media(min-width: 420px) {
+    
+    div#root {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 0.1 0 550px;
+        padding: 2.5em 7.5em;
+    }
+    
+    html, body {
+        font-size: 18px;
+    }
+}
+
+@media(min-width: 1100px) {
+    
+    html, body {
+        font-size: 20px;
+    }
+    
+    div#root {
+        flex-grow: 1;
+        max-width: 1300px;
+        height: 100vh;
+        padding: 0;
+        margin: 0 2em;
+    }
+    
+    div.card {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .headshot, div.main {
+        width: 50%;
+        align-self: stretch;
+    }
+    
+    .headshot {
+        border-radius: 0.625em 0 0 0;
+    }
+    
+    div.main {
+        border-radius: 0 0.625em 0 0;
+        align-self: stretch;
+    }
+    
+    .about, .interests {
+        max-width: 500px;
+    }
+    
+    .info--buttons {
+        flex-direction: column;
+    }
+    
+    .info--buttons > a {
+        width: 80%;
+    }
+}
+
+@media(min-width: 1500px) {
+    html, body {
+        font-size: 26px;
+    }
+}
+

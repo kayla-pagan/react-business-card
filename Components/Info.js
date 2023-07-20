@@ -17,7 +17,7 @@ export default function Info(){
                             <p>Email</p>
                         </a>
                         <a 
-                        href="www.linkedin.com/in/kayla-pagan-24556bb8"
+                        href="https://www.linkedin.com/in/kayla-pagan-24556bb8/"
                         target="_blank"
                         className="info--buttons_linkedin">
                             <img src="../img/linkedin.svg" />
